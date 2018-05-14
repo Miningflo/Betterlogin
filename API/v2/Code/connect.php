@@ -1,8 +1,7 @@
 <?php
 function connect($dbname){
     $servername = "localhost";
-    $username ="root";
-    $password = "";
+    require("./credentials.php");
     if($dbname == ""){
         $conn = new mysqli($servername, $username, $password);
     }else{
